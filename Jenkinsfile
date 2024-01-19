@@ -1,10 +1,6 @@
 pipeline {
     agent any
-    tools {
-      jdk 'Jdk17'
-      nodejs 'node-16'
-    }
-  
+
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
         APP_NAME = "reddit-clone-pipeline"
